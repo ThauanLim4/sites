@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 header {
     font-family: monospace;
     text-align: center;
@@ -12,15 +13,44 @@ header {
     display: inline block;
     border-bottom: 2px solid black;
 }
+
+section {
+    text-align: center;
+}
+
 nav {
     display: inline-block;
     left: 20px;
 }
+
+article {
+    background-color: gray;
+    width: 33.33vh;
+    height: 300px;
+    margin: 20px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
 .hone {
     display: inline;
 }
+
 .menuhamburger {
     position: absolute;
     top: 10px;
     left: 20px;
+}
+
+.lupa {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+@media screen and (max-width: 778px) {
+    article {
+        width: ;
+    }
+
 }
