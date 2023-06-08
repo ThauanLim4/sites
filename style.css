@@ -1,6 +1,15 @@
+:root {
+--corum: #3FA3EB;
+--cordois: #3D586B;
+--cortres: #3280B8;
+--corquatro: #88C3EE;
+--corcinco: #1D4B6B;
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
@@ -12,6 +21,11 @@ header {
     padding: 5px;
     display: inline block;
     border-bottom: 2px solid black;
+}
+main {
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(to right, #0c2e46, #1D4B6B);
 }
 
 section {
@@ -29,7 +43,17 @@ article {
     height: 300px;
     margin: 20px;
     display: inline-block;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+article a {
+    background-position: center center;
 }
 
 .hone {
@@ -49,8 +73,12 @@ article {
 }
 
 @media screen and (max-width: 778px) {
-    article {
-        width: ;
-    }
+    article {}
 
+}
+
+a:hover {
+color: springgreen;
+transition: 500ms;
+text-shadow: 1px 1px 1px black;
 }
